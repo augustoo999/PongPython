@@ -12,7 +12,7 @@ SOUND_DIR = os.path.join(BASE_DIR, "assets", "sounds")
 # Tela
 largura, altura = 1366, 640
 tela = pygame.display.set_mode((largura, altura))
-pygame.display.set_caption("Pong Avançado")
+pygame.display.set_caption("Pong")
 
 # Cores
 BRANCO = (255, 255, 255)
@@ -80,7 +80,7 @@ while True:
         titulo = fonte.render("PONG", True, BRANCO)
         tela.blit(titulo, (largura // 2 - titulo.get_width() // 2, 150))
 
-        botao_jogar = desenhar_botao("Jogar contra IA", largura//2 - 150, 280, 300, 50, mouse)
+        botao_jogar = desenhar_botao("Jogar", largura//2 - 150, 280, 300, 50, mouse)
         botao_sair = desenhar_botao("Sair", largura//2 - 150, 350, 300, 50, mouse)
         pygame.display.flip()
 
